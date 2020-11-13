@@ -48,3 +48,9 @@ const t = dom.find('#travel')[0];
 dom.each(dom.children(t), (n)=> dom.style(n, 'color', 'red'));
 
 console.log(dom.index(s2));
+
+const div4 = dom.find('#test>.red')[0];
+dom.style(div, 'color', 'red');
+
+const divList = dom.find('.red');
+dom.each(divList, (n)=> console.log(n))
